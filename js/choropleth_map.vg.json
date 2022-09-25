@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Total Electricity Generated 2021",
+  "title": "Electricity Demand per Capita 2021",
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"},
@@ -13,7 +13,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/total_electricity_generation_countries2021.csv"
+          "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/electricity_demandpercapita_countries2021.csv"
         },
         "key": "Area",
         "fields": ["Value"]
@@ -26,12 +26,12 @@
     "color": {
       "field": "Energy",
       "type": "quantitative",
-      "scale": {"type": "log"},
-      "title": "Terrawatt-hour"
+      "scale": {"type": "linear"},
+      "title": "Demand per Capita(MWh)"
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Value", "type": "quantitative", "title": "Energy(TWh)"}
+      {"field": "Value", "type": "quantitative", "title": "Demand(MWh)"}
     ]
   }
 }
