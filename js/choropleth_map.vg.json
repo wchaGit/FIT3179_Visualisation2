@@ -16,7 +16,7 @@
                   "lookup": "properties.NAME",
                   "from": {
                       "data": {
-                          "url": ""
+                          "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation.csv"
                       },
                       "key": "Area",
                       "fields": ["Value"]
@@ -29,7 +29,7 @@
               "color": {
                   "field": "Electricity",
                   "type": "quantitative",
-                  "scale": {"type": "linear"},
+                  "scale": {"type": "log"},
                   "title": "Electricity generated (TWh)"
               },
               "tooltip": [
