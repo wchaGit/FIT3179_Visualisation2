@@ -19,7 +19,7 @@
     ],  
     "vconcat": [
       {
-        "width": "container",
+        "width": 800,
         "height": 500,
         "projection": {
           "type": "equalEarth"
@@ -35,6 +35,9 @@
               "fill": "#ddd",
               "stroke": "white",
               "strokeWidth": 1
+            },
+            "encoding": {
+              "tooltip": {"field": "note"}
             }
           },
           {
@@ -43,7 +46,6 @@
                 "name": "loc_select",
                 "select": {"type": "point", "encodings": ["description"]}
               }
-              
             ],
             "transform": [
               {
@@ -59,6 +61,16 @@
               },
               {
                 "filter": "year(datum.Year) == year_select"
+              },
+              {
+                "joinaggregate": [
+                  {
+                    "op": "sum",
+                    "field": "Value",
+                    "as": "total_elec"
+                  }
+                ],
+                "groupby": ["Area", "Year"]
               }
             ],
             "mark": {
@@ -66,29 +78,68 @@
             },
             "encoding": 
             {
-                "shape": {"field": "geo", "type": "geojson"},
-                "color":
-                {
-                    "field": "Value",
-                    "type": "quantitative",
-                    "aggregate": "sum",
-                    "title": "Generated",
-                    "scale": {"type": "linear", "domain": [0,500]},
-                    "legend": {"format": ".2s"}
-                },
-                "detail":
-                [
-                    {"field": "Area", "type": "nominal"},
-                    {"field": "Year", "type": "quantitative"}
-                ],
-                "tooltip":
-                [
-                    {"field": "Area", "type": "nominal", "title": "Country"},
-                    {"field": "Value", "type": "quantitative", "title": "Generated"}
-                ]
+              "shape": {"field": "geo", "type": "geojson"},
+              "color":
+              {
+                "field": "total_elec",
+                "type": "quantitative",
+                "title": "Generated",
+                "scale": {"type": "linear"},
+                "legend": {"format": ".2s"}
+              },
+              "tooltip":
+              [
+                {"field": "Area", "type": "nominal", "title": "Country"},
+                {"field": "total_elec", "type": "quantitative", "title": "Generated"}
+              ]
             }
           }
         ]
+      },
+      {
+        "width": 600,
+        "height": 300,
+        "layer" : 
+        [
+          {
+            "mark": "area",
+            "transform": [
+              {"filter": {"param": "loc_select"}}
+            ],
+            "encoding": {
+              "x": {
+                "timeUnit": "year", "field": "Year",
+                "axis": {"format": "%Y"}
+              },
+              "y": {
+                "aggregate": "sum", "field": "Value"
+              },
+              "color": {
+                "field": "Variable",
+                "scale": {"scheme": "category20b"}
+              }
+            }
+          },
+          {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "bottom",
+                "x": "width",
+                "y": 0
+            },
+            "encoding": {
+              "text": {
+                "condition": {
+                  "test": "!isDefined(loc_select.Area)",
+                  "value": "ALL COUNTRIES"
+                },
+                "value": {"expr": "loc_select.Area"}
+              }
+            }
+          }
+        ]
+
       }
     ]
   }

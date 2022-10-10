@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple donut chart with embedded data.",
+    "data": {
+        "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation.csv"
+      },
+      "transform":
+      [
+        {
+            "joinaggregate": [
+              {
+                "op": "sum",
+                "field": "Value",
+                "as": "total_emission"
+              }
+            ],
+            "groupby": ["Variable"]
+          }
+      ],
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+      "theta": {"field": "total_emission", "type": "quantitative"},
+      "color": {"field": "Variable", "type": "nominal"}
+    }
+  }
+  
