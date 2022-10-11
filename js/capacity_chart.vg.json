@@ -1,21 +1,56 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 300, "height": 200,
-    "data": {"url": ""},
-    "mark": "area",
-    "encoding": {
-      "x": {
-        "timeUnit": "year", "field": "Year",
-        "axis": {"format": "%Y"}
+    "title": "World Electrical Capacity",
+    "width": 600, "height": 400,
+    "data": {"url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/capacity.csv"},
+    "encoding": {"x": {"field": "Year", "type": "temporal"}},
+    "layer": [
+      {
+        "encoding": {
+          "color":
+          {
+            "field": "Variable", "type": "nominal", 
+            "scale": {"domain": ["Bioenergy", "Coal", "Gas", "Hydro", "Nuclear", "Other Fossil", "Other Renewables", "Solar", "Wind"], 
+            "range":["#A852D9", "#6E5449", "#5D8365", "#58A4B0", "#FFD92F", "#814528", "#CBE896", "#CB8A01", "#A9BCD0"]}
+          },
+          "y": {"field": "Value", "type": "quantitative", "axis":{"title": "Capacity (GW)"} }
+        },
+        "layer": [
+          {"mark": "area"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+        ]
       },
-      "y": {
-        "aggregate": "sum", "field": "Value"
-      },
-      "color": {
-        "field": "Variable",
-        "scale": {"scheme": "category20b"}
+      {
+        "transform": [{"pivot": "Variable", "value": "Value", "groupby": ["Year"]}],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 100, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Year", "type": "temporal"},
+            {"field": "Bioenergy", "type": "quantitative"},
+            {"field": "Coal", "type": "quantitative"},
+            {"field": "Gas", "type": "quantitative"},
+            {"field": "Hydro", "type": "quantitative"},
+            {"field": "Nuclear", "type": "quantitative"},
+            {"field": "Other Fossil", "type": "quantitative"},
+            {"field": "Other Renewables", "type": "quantitative"},
+            {"field": "Solar", "type": "quantitative"},
+            {"field": "Wind", "type": "quantitative"}
+          ]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
       }
-    }
-  }
-  
-  
+    ]
+}
