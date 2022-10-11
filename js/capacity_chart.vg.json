@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300, "height": 200,
+    "data": {"url": ""},
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "timeUnit": "year", "field": "Year",
+        "axis": {"format": "%Y"}
+      },
+      "y": {
+        "aggregate": "sum", "field": "Value"
+      },
+      "color": {
+        "field": "Variable",
+        "scale": {"scheme": "category20b"}
+      }
+    }
+  }
+  
+  
