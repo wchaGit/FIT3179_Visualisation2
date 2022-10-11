@@ -2,25 +2,41 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A simple donut chart with embedded data.",
     "data": {
-        "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation.csv"
-      },
-      "transform":
-      [
+    "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/emissions.csv"
+    },
+    "vconcat": 
+    [
         {
-            "joinaggregate": [
-              {
-                "op": "sum",
-                "field": "Value",
-                "as": "total_emission"
-              }
+            "mark": {"type": "arc", "innerRadius": 50},
+            "transform": 
+            [
+                {"filter": {"param": "time_brush"}}
             ],
-            "groupby": ["Variable"]
-          }
-      ],
-    "mark": {"type": "arc", "innerRadius": 50},
-    "encoding": {
-      "theta": {"field": "total_emission", "type": "quantitative"},
-      "color": {"field": "Variable", "type": "nominal"}
-    }
-  }
-  
+            "encoding": {
+              "theta": {"field": "Value", "type": "quantitative"},
+              "color": {"field": "Variable", "type": "nominal"}
+            }
+        },
+        {
+            "height": 300,
+            "width": 600,
+            "mark": "line",
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal"},
+              "y": {"field": "Value", "type": "quantitative"},
+              "color": {"field": "Variable", "type": "nominal"}
+            },
+            "params":
+            [
+                {"name": "time_brush", "select": {"type": "interval", "encodings": ["x"]}}
+            ]
+        },
+        {
+            "mark": "bar",
+            "encoding": {
+                "x": {"field": "Value", "type": "quantitative", "scale": {"type": "linear"}},
+                "y": {"field": "Variable", "type": "nominal"}
+            }
+        }
+    ]
+}
