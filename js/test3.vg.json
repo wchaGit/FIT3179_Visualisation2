@@ -102,7 +102,7 @@
         "layer" : 
         [
           {
-            "mark": "area",
+            "mark": "line",
             "transform": [
               {"filter": {"param": "loc_select"}}
             ],
