@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "elec gen)",
+    "title": "Electricity Generation (2000-2021)",
     "data": {
       "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation.csv"
     },
@@ -11,7 +11,7 @@
         "bind": {
           "input": "range",
           "min": 2000,
-          "max": 2020,
+          "max": 2021,
           "step": 1,
           "name": "Year: "
         }
@@ -83,14 +83,18 @@
               {
                 "field": "total_elec",
                 "type": "quantitative",
-                "title": "Generated",
-                "scale": {"type": "linear"},
+                "title": "GWh",
+                "scale": {
+                  "type": "threshold",
+                  "domain": [50,100,500,1000,5000,10000,18000],
+                  "range": ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+                },
                 "legend": {"format": ".2s"}
               },
               "tooltip":
               [
                 {"field": "Area", "type": "nominal", "title": "Country"},
-                {"field": "total_elec", "type": "quantitative", "title": "Generated"}
+                {"field": "total_elec", "type": "quantitative", "title": "GWh"}
               ]
             }
           }
