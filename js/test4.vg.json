@@ -45,14 +45,14 @@
               "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/js/oceans.topojson",
               "format": {"type": "topojson", "feature": "oceans"}
             },
-            "mark": {"type": "geoshape", "fill": "skyblue", "stroke": "lightgrey"}
+            "mark": {"type": "geoshape", "fill": "#ACD8E5", "stroke": "lightgrey"}
           },
           {
             "data": {
               "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/js/ne_110m.json",
               "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
             },
-            "mark": {"type": "geoshape", "fill": null, "stroke": "lightgrey"}
+            "mark": {"type": "geoshape", "fill": null, "stroke": "darkgrey"}
           },
           {
             "params": [
@@ -132,7 +132,7 @@
                 "scale": {"domain": ["Bioenergy", "Coal", "Gas", "Hydro", "Nuclear", "Other Fossil", "Other Renewables", "Solar", "Wind"], 
                 "range":["#A852D9", "#6E5449", "#5D8365", "#58A4B0", "#FFD92F", "#814528", "#CBE896", "#CB8A01", "#A9BCD0"]}
               },
-              "y": {"field": "Value", "aggregate": "sum", "type": "quantitative", "axis":{"title": "Capacity (GW)", "grid": true} },
+              "y": {"field": "Value", "aggregate": "sum", "type": "quantitative", "axis":{"title": "Capacity (GW)", "grid": true}},
               "x": {"field": "Year", "type": "temporal", "axis":{"grid": false}}
             },
             "layer": [
