@@ -1,26 +1,12 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A simple donut chart with embedded data.",
-    "data": {
-        "url": "https://github.com/wchaGit/FIT3179_Visualisation2/blob/master/data/capacity2.csv"
-    },
-    "params":
-    [
-        {
-            "name": "region",
-            "select": {"type": "point", "fields": ["Origin"]},
-            "bind": {"input": "select", "options": ["Africa", "Asia", "EU", "Europe", "G20", "G7", "Latin America and Caribbean", "North America", "Oceanea", "OECD", "World"]}
-        }
-    ],
-    "mark": {"type": "arc", "innerRadius": 50},
-    "encoding": {
-      "theta": {"field": "Value", "type": "quantitative"},
-      "color": {
-        "condition": {
-            "param": "region",
-            "field": "Area", "type": "nominal"
-        },
-        "value": 
-      }
-    }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "data": {
+    "url": ""
+  },
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "category", "type": "nominal"}
   }
+}
