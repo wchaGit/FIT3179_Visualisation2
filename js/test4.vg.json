@@ -42,7 +42,7 @@
           },
           {
             "data": {
-              "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+              "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/js/oceans.topojson",
               "format": {"type": "topojson", "feature": "oceans"}
             },
             "mark": {"type": "geoshape", "fill": "skyblue", "stroke": "lightgrey"}
