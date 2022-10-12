@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Electricity Generation (2000-2021)",
+    "title": "Electricity Generation (2000-2020)",
     "data": {
       "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation.csv"
     },
@@ -11,7 +11,7 @@
         "bind": {
           "input": "range",
           "min": 2000,
-          "max": 2021,
+          "max": 2020,
           "step": 1,
           "name": "Year: "
         }
@@ -86,13 +86,14 @@
                 "title": "GWh",
                 "scale": {
                   "type": "threshold",
-                  "domain": [50,100,500,1000,5000,10000,18000],
+                  "domain": [1,100,250,500,1000,2500,5000],
                   "range": ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
                 },
                 "legend": {"format": ".2s"}
               },
               "tooltip":
               [
+                {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
                 {"field": "Area", "type": "nominal", "title": "Country"},
                 {"field": "total_elec", "type": "quantitative", "title": "GWh"}
               ]
@@ -103,47 +104,60 @@
       {
         "width": 600,
         "height": 300,
-        "layer" : 
-        [
+        "encoding": {"x": {"field": "Year", "type": "temporal"}},
+        "layer": [
           {
-            "mark": "line",
             "transform": [
               {"filter": {"param": "loc_select"}}
             ],
             "encoding": {
-              "x": {
-                "timeUnit": "year", "field": "Year",
-                "axis": {"format": "%Y"}
+              "color":
+              {
+                "field": "Variable", "type": "nominal", 
+                "scale": {"domain": ["Bioenergy", "Coal", "Gas", "Hydro", "Nuclear", "Other Fossil", "Other Renewables", "Solar", "Wind"], 
+                "range":["#A852D9", "#6E5449", "#5D8365", "#58A4B0", "#FFD92F", "#814528", "#CBE896", "#CB8A01", "#A9BCD0"]}
               },
-              "y": {
-                "aggregate": "sum", "field": "Value"
-              },
-              "color": {
-                "field": "Variable",
-                "scale": {"scheme": "category20b"}
-              }
-            }
+              "y": {"field": "Value", "aggregate": "sum", "type": "quantitative", "axis":{"title": "Capacity (GW)", "grid": true} },
+              "x": {"field": "Year", "type": "temporal", "axis":{"grid": false}}
+            },
+            "layer": [
+              {"mark": "line"},
+              {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+            ]
           },
           {
-            "mark": {
-                "type": "text",
-                "align": "right",
-                "baseline": "bottom",
-                "x": "width",
-                "y": 0
-            },
+            "transform": [{"pivot": "Variable", "value": "Value", "groupby": ["Year"]}],
+            "mark": "rule",
             "encoding": {
-              "text": {
-                "condition": {
-                  "test": "!isDefined(loc_select.Area)",
-                  "value": "ALL COUNTRIES"
-                },
-                "value": {"expr": "loc_select.Area"}
+              "opacity": {
+                "condition": {"value": 100, "param": "hover", "empty": false},
+                "value": 0
+              },
+              "tooltip": [
+                {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+                {"field": "Bioenergy", "type": "quantitative"},
+                {"field": "Coal", "type": "quantitative"},
+                {"field": "Gas", "type": "quantitative"},
+                {"field": "Hydro", "type": "quantitative"},
+                {"field": "Nuclear", "type": "quantitative"},
+                {"field": "Other Fossil", "type": "quantitative"},
+                {"field": "Other Renewables", "type": "quantitative"},
+                {"field": "Solar", "type": "quantitative"},
+                {"field": "Wind", "type": "quantitative"}
+              ]
+            },
+            "params": [{
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["Year"],
+                "nearest": true,
+                "on": "mouseover",
+                "clear": "mouseout"
               }
-            }
+            }]
           }
         ]
-
       }
     ]
   }

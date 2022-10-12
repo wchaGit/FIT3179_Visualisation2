@@ -14,7 +14,7 @@
             "range":["#A852D9", "#6E5449", "#5D8365", "#58A4B0", "#FFD92F", "#814528", "#CBE896", "#CB8A01", "#A9BCD0"]}
           },
           "y": {"field": "Value", "type": "quantitative", "axis":{"title": "Capacity (GW)", "grid": false} },
-          "x": {"field": "Year", "type": "temporal", "axis": {"grid": false }}
+          "x": {"field": "Year", "type": "temporal"}
           
         },
         "layer": [
@@ -31,7 +31,7 @@
             "value": 0
           },
           "tooltip": [
-            {"field": "Year", "type": "temporal"},
+            {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
             {"field": "Bioenergy", "type": "quantitative"},
             {"field": "Coal", "type": "quantitative"},
             {"field": "Gas", "type": "quantitative"},

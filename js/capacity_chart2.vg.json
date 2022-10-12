@@ -16,14 +16,33 @@
         "step": 1,
         "name": "Year: "
       }
-    }
+    },
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
   ],
-  "mark": {"type": "arc", "innerRadius": 50},
+  "mark": {"type": "arc", "innerRadius": 50, "stroke": "black"},
   "transform": [
     {"filter": "year(datum.Year) == year_select"}
   ],
   "encoding": {
     "theta": {"field": "Value", "type": "quantitative"},
-    "color": {"field": "Area", "type": "nominal"}
+    "color": {"field": "Area", "type": "nominal"},
+    "fillOpacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.3
+    },
+    "strokeWidth": {
+      "condition": [
+        {
+          "param": "highlight",
+          "empty": false,
+          "value": 1
+        }
+      ],
+      "value": 0
+    },
+    "tooltip":[
+      {"field": "Area", "type": "nominal", "title": ""},
+      {"field": "Value", "type": "quantitative"}
+    ]
   }
 }
