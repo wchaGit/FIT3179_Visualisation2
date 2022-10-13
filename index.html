@@ -10,25 +10,59 @@
     
     
     <!-- CSS file -->
-    
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
-    <h1> World Electricity Data </h1>
-    <div class="page">
-      <h2> Generation  </h2>
-      <div id= "choropleth_map"></div>
+    <div class = "page">
+
+      <!-- Title -->
+      <h1 class = "main-title"> World Electricity Data </h1>
+      <p class = "desc"> Visualisation by Wilbert Chandra </p>
+
+      <!-- Generation -->
+      <h1 class="main-heading"> Electrical Generation </h1>
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+            <div id="map"></div>
+        </div>
+      </div>
+      <p class="desc"> this is bla bla bla </p>
+
+      <!-- Capacity -->
+      <h1 class="main-heading"> Electrical Capacity </h1>
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+            <div id="capacity_stacked"></div>
+        </div>
+      </div>
+      <p class="desc"> this is bla bla bla </p>
+      </div>
     </div>
-    <h2> Capacity </h2>
-    <div id= "capacity"></div>
-    <div id= "capacity2"></div>
-    <h3> Emission </h3>
 
-    <div class="header"> hello</div>
 
-    <p> faiuwefbaiwjfaweifhiowf </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script type="text/javascript">
 
@@ -37,11 +71,11 @@
       var spec4 = "js/capacity_donut.vg.json";
 
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/)as result.view
-      vegaEmbed('#choropleth_map', spec2).then(function(result) {
+      vegaEmbed('#map', spec2).then(function(result) {
       }).catch(console.error);
-      vegaEmbed('#capacity', spec3).then(function(result) {
+      vegaEmbed('#capacity_stacked', spec3).then(function(result) {
       }).catch(console.error);
-      vegaEmbed('#capacity2', spec4).then(function(result) {
+      vegaEmbed('#capacity_donut', spec4).then(function(result) {
       }).catch(console.error);
 
     </script>

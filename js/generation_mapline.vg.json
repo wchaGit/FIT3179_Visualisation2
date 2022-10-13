@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Electricity Generation (2000-2020)",
     "data": {
       "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation.csv"
     },

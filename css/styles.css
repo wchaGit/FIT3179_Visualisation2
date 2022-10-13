@@ -1,22 +1,126 @@
-.vis-container {
-    width: 100%;
+.page{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
 }
 
-title{
-    color: blue;
-}
-.page {
-    width: 1024px;
-    background-color: white;
-    margin: auto;
-    padding: 50px;
-    padding-top: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
+.UFC-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    height:100px;
+    margin-top: 50px;
 }
 
-.hr3 {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, transparent, #DDD, transparent);
-    padding-top: 5px;
+.main-title{
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
+.main-heading{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+.desc{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    text-align: center;
+}
+
+.chart-heading{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chart-description{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    text-align: center;
+}
+
+.donut-dec-sub-ko{
+    width: 200px;
+    margin-left: 100px;
+}
+
+.dataset-button {
+    background-color: #1d1d1d;
+    border: none;
+    font-family: Arial;
+    height: 36px;
+    width: 175px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.dataset-button:hover {
+opacity: 0.8;
+box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.15);
+}
+
+.github-button {
+background-color: #1d1d1d;
+border: none;
+font-family: Arial;
+height: 36px;
+width: 175px;
+border-radius: 4px;
+cursor: pointer;
+margin-right: 8px;
+}
+
+.github-button:hover {
+opacity: 0.8;
+box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.15);
+}
+
+.details-button {
+background-color: #000000;
+color: white;
+border: none;
+font-weight: bold;
+font-family: Arial;
+border-radius: 4px;
+margin-left: 100px;
+display: inline-block;
+}
+
+.bottom-page {
+display: block;
+margin: auto;
+}
+
+.hyperlink {
+color: white;
+text-decoration: none;
+font-weight: bold;
+margin-top: 8px;
+}
+
+.external-links{
+display: inline;
+margin-left: auto; 
+margin-right: 0;
+}
+
