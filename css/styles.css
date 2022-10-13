@@ -2,6 +2,9 @@
     width: 100%;
 }
 
+title{
+    color: blue;
+}
 .page {
     width: 1024px;
     background-color: white;

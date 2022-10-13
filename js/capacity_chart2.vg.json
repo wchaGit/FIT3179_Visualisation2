@@ -25,7 +25,12 @@
   ],
   "encoding": {
     "theta": {"field": "Value", "type": "quantitative"},
-    "color": {"field": "Area", "type": "nominal"},
+    "color": {"title": "Region", "field": "Area", "type": "nominal",
+      "scale": {
+        "type": "threshold",
+        "domain": ["Africa", "Asia", "Europe", "Latin America and Caribbean", "North America", "Oceania"],
+        "range": ["#FE4A49", "2AB7CA", "#FED766", "#9e714f", "#3d0b37", "#26547c"]
+      }},
     "fillOpacity": {
       "condition": {"param": "highlight", "value": 1},
       "value": 0.3
@@ -41,8 +46,8 @@
       "value": 0
     },
     "tooltip":[
-      {"field": "Area", "type": "nominal", "title": ""},
-      {"field": "Value", "type": "quantitative"}
+      {"field": "Area", "type": "nominal", "title": "Region"},
+      {"field": "Value", "type": "quantitative", "title": "Capacity(GW)", "format": ","}
     ]
   }
 }

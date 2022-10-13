@@ -9,6 +9,7 @@
         "encoding": {
           "color":
           {
+            "title": "Source",
             "field": "Variable", "type": "nominal", 
             "scale": {"domain": ["Bioenergy", "Coal", "Gas", "Hydro", "Nuclear", "Other Fossil", "Other Renewables", "Solar", "Wind"], 
             "range":["#A852D9", "#6E5449", "#5D8365", "#58A4B0", "#FFD92F", "#814528", "#CBE896", "#CB8A01", "#A9BCD0"]}
@@ -31,15 +32,15 @@
           },
           "tooltip": [
             {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
-            {"field": "Bioenergy", "type": "quantitative"},
-            {"field": "Coal", "type": "quantitative"},
-            {"field": "Gas", "type": "quantitative"},
-            {"field": "Hydro", "type": "quantitative"},
-            {"field": "Nuclear", "type": "quantitative"},
-            {"field": "Other Fossil", "type": "quantitative"},
-            {"field": "Other Renewables", "type": "quantitative"},
-            {"field": "Solar", "type": "quantitative"},
-            {"field": "Wind", "type": "quantitative"}
+            {"field": "Bioenergy", "type": "quantitative", "format": ","},
+            {"field": "Coal", "type": "quantitative", "format": ","},
+            {"field": "Gas", "type": "quantitative", "format": ","},
+            {"field": "Hydro", "type": "quantitative", "format": ","},
+            {"field": "Nuclear", "type": "quantitative", "format": ","},
+            {"field": "Other Fossil", "type": "quantitative", "format": ","},
+            {"field": "Other Renewables", "type": "quantitative", "format": ","},
+            {"field": "Solar", "type": "quantitative", "format": ","},
+            {"field": "Wind", "type": "quantitative", "format": ","}
           ]
         },
         "params": [{
