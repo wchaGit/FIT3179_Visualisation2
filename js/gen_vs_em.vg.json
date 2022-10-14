@@ -1,24 +1,21 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A bar chart showing the US population distribution of age groups and gender in 2000.",
-    "data": { "url": "data/population.json"},
-    "transform": [
-      {"filter": "datum.year == 2000"},
-      {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
-    ],
+    "data": { "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation_vs_emission.csv"},
+    
     "width": {"step": 17},
     "mark": "bar",
     "encoding": {
-      "x": {"field": "age", "type": "ordinal"},
-      "y": {
-        "aggregate": "sum", "field": "people",
-        "title": "population",
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {
+        "aggregate": "sum", "field": "Value",
+        "title": "TWH / mtCO2",
         "stack": null
-      },
-      "color": {
-        "field": "gender",
+        },
+        "color": {
+        "field": "Variable",
         "scale": {"range": ["#675193", "#ca8861"]}
-      },
-      "opacity": {"value": 0.7}
+        },
+        "opacity": {"value": 0.7}
     }
   }
