@@ -18,8 +18,8 @@
     ],  
     "vconcat": [
       {
-        "width": 800,
-        "height": 500,
+        "width": 700,
+        "height": 400,
         "projection": {
           "type": "equalEarth"
         },
@@ -122,8 +122,8 @@
         ]
       },
       {
-        "width": 800,
-        "height": 400,
+        "width": 700,
+        "height": 300,
         "encoding": {"x": {"field": "Year", "type": "temporal"}},
         "layer": [
           {

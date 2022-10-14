@@ -1,126 +1,58 @@
-.page{
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    
+body *{
+    font-family: 'Roboto', sans-serif;
 }
 
-.UFC-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:300px;
-    height:100px;
-    margin-top: 50px;
+h1 {
+    font-weight: 900;
 }
 
-.main-title{
-    font-size: 55px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+body {
+    background-color: lightgrey;
 }
-.main-heading{
-    font-size: 45px;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
+
+.section-body {
+    background-color: white;
+    margin: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.desc{
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
+
+.section {
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.page {
+    width: 1000px;
+    background-color: lightgrey;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+.vis-container {
+    width: 100%;
+}
+
+.description h2,
+h1 {
     margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-    text-align: center;
 }
 
-.chart-heading{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 70px;
-    font-family: 'Roboto', sans-serif;
+.description-right {
+    padding-left: 20px;
 }
 
-.chart-description{
-    font-size: 17px;
-    color: rgb(255, 255, 255);
-    font-family: Arial;
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-    text-align: center;
+.description-left {
+    padding-right: 20px;
 }
 
-.donut-dec-sub-ko{
-    width: 200px;
-    margin-left: 100px;
+.pure-g {
+    margin-bottom: 40px;
 }
 
-.dataset-button {
-    background-color: #1d1d1d;
-    border: none;
-    font-family: Arial;
-    height: 36px;
-    width: 175px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
+.small-font {
+    font-size: 14px;
 }
-
-.dataset-button:hover {
-opacity: 0.8;
-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.15);
-}
-
-.github-button {
-background-color: #1d1d1d;
-border: none;
-font-family: Arial;
-height: 36px;
-width: 175px;
-border-radius: 4px;
-cursor: pointer;
-margin-right: 8px;
-}
-
-.github-button:hover {
-opacity: 0.8;
-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.15);
-}
-
-.details-button {
-background-color: #000000;
-color: white;
-border: none;
-font-weight: bold;
-font-family: Arial;
-border-radius: 4px;
-margin-left: 100px;
-display: inline-block;
-}
-
-.bottom-page {
-display: block;
-margin: auto;
-}
-
-.hyperlink {
-color: white;
-text-decoration: none;
-font-weight: bold;
-margin-top: 8px;
-}
-
-.external-links{
-display: inline;
-margin-left: auto; 
-margin-right: 0;
-}
-
