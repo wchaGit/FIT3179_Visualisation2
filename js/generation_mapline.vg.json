@@ -122,6 +122,24 @@
         ]
       },
       {
+        "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "x": 350,
+            "y": 50
+        },
+        "encoding": {
+          "text": {
+            "condition": {
+              "test": "!isDefined(loc_select.Area)",
+              "value": "World"
+            },
+            "value": {"expr": "loc_select.Area"}
+          }
+        }
+      },
+      {
         "width": 700,
         "height": 300,
         "encoding": {"x": {"field": "Year", "type": "temporal"}},
@@ -179,24 +197,13 @@
             }]
           }
         ]
-      },
-      {
-        "mark": {
-            "type": "text",
-            "align": "center",
-            "baseline": "bottom",
-            "x": 500,
-            "y": 0
-        },
-        "encoding": {
-          "text": {
-            "condition": {
-              "test": "!isDefined(loc_select.Area)",
-              "value": "World"
-            },
-            "value": {"expr": "loc_select.Area"}
-          }
+      }
+    ],
+    "config": {
+      "style": {
+        "cell": {
+          "stroke": "transparent"
         }
       }
-    ]
+    }
   }

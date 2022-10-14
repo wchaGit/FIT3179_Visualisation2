@@ -49,5 +49,12 @@
       {"field": "Area", "type": "nominal", "title": "Region"},
       {"field": "Value", "type": "quantitative", "title": "Capacity(GW)", "format": ","}
     ]
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
   }
 }

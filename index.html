@@ -89,6 +89,27 @@
       </div>
     </div>
 
+    <!-- Emission -->
+    <div class = "section">
+      <div class = "section-body">
+        <div class="pure-g">
+          <div class="pure-u-1-3">
+            <div class="description description-left">
+              <h2>First and Second Columns Combined</h2>
+              <p>The first and second columns are combined. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
+                faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.
+                he first and second columns are combined. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
+                faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+            </div>
+          </div>
+          <div class="pure-u-2-3">
+            <div id="emission" class="vis-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <script type="text/javascript">
@@ -96,6 +117,7 @@
       var spec2 = "js/generation_mapline.vg.json";
       var spec3 = "js/capacity_stacked.vg.json";
       var spec4 = "js/capacity_donut.vg.json";
+      var spec5 = "js/emission.vg.json";
 
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/)as result.view
       vegaEmbed('#map', spec2).then(function(result) {
@@ -103,6 +125,8 @@
       vegaEmbed('#capacity_stacked', spec3).then(function(result) {
       }).catch(console.error);
       vegaEmbed('#capacity_donut', spec4).then(function(result) {
+      }).catch(console.error);
+      vegaEmbed('#emission', spec5).then(function(result) {
       }).catch(console.error);
 
     </script>
