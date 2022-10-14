@@ -1,133 +1,199 @@
-Year,Variable,Value
-2000,Clean,129.35
-2000,Fossil,6834.37
-2000,Gas and Other Fossil,2147.18
-2000,"Hydro, Bioenergy and Other Renewables",98.9
-2000,Renewables,99.27
-2000,Wind and Solar,0.37
-2001,Clean,127.6
-2001,Fossil,6964.29
-2001,Gas and Other Fossil,2208.86
-2001,"Hydro, Bioenergy and Other Renewables",96.27
-2001,Renewables,96.72
-2001,Wind and Solar,0.45
-2002,Clean,132.10999999999999
-2002,Fossil,7259.84
-2002,Gas and Other Fossil,2294.34
-2002,"Hydro, Bioenergy and Other Renewables",100.3
-2002,Renewables,100.89
-2002,Wind and Solar,0.59
-2003,Clean,134.62
-2003,Fossil,7668.8
-2003,Gas and Other Fossil,2371.13
-2003,"Hydro, Bioenergy and Other Renewables",102.99
-2003,Renewables,103.73
-2003,Wind and Solar,0.74
-2004,Clean,144.79
-2004,Fossil,7966.67
-2004,Gas and Other Fossil,2480.63
-2004,"Hydro, Bioenergy and Other Renewables",111.57000000000001
-2004,Renewables,112.61
-2004,Wind and Solar,1.04
-2005,Clean,153.18
-2005,Fossil,8333.57
-2005,Gas and Other Fossil,2562.67
-2005,"Hydro, Bioenergy and Other Renewables",119.65
-2005,Renewables,120.94
-2005,Wind and Solar,1.29
-2006,Clean,159.5
-2006,Fossil,8703.18
-2006,Gas and Other Fossil,2604.93
-2006,"Hydro, Bioenergy and Other Renewables",125.2
-2006,Renewables,126.86
-2006,Wind and Solar,1.6600000000000001
-2007,Clean,165.69
-2007,Fossil,9277.72
-2007,Gas and Other Fossil,2776.03
-2007,"Hydro, Bioenergy and Other Renewables",131.51
-2007,Renewables,133.68
-2007,Wind and Solar,2.17
-2008,Clean,174.34
-2008,Fossil,9297.48
-2008,Gas and Other Fossil,2797.66
-2008,"Hydro, Bioenergy and Other Renewables",139.58
-2008,Renewables,142.48
-2008,Wind and Solar,2.9
-2009,Clean,179.83
-2009,Fossil,9166.66
-2009,Gas and Other Fossil,2758.73
-2009,"Hydro, Bioenergy and Other Renewables",144.53
-2009,Renewables,148.4
-2009,Wind and Solar,3.87
-2010,Clean,196.22
-2010,Fossil,9812.23
-2010,Gas and Other Fossil,2964.4
-2010,"Hydro, Bioenergy and Other Renewables",158.76
-2010,Renewables,163.98
-2010,Wind and Solar,5.22
-2011,Clean,203.9
-2011,Fossil,10302.35
-2011,Gas and Other Fossil,3076.17
-2011,"Hydro, Bioenergy and Other Renewables",165.19
-2011,Renewables,172.98
-2011,Wind and Solar,7.79
-2012,Clean,214.64
-2012,Fossil,10469.369999999999
-2012,Gas and Other Fossil,3225.7
-2012,"Hydro, Bioenergy and Other Renewables",175.52
-2012,Renewables,185.79999999999998
-2012,Wind and Solar,10.280000000000001
-2013,Clean,228.36
-2013,Fossil,10771.75
-2013,Gas and Other Fossil,3149.98
-2013,"Hydro, Bioenergy and Other Renewables",186.02
-2013,Renewables,199.32
-2013,Wind and Solar,13.3
-2014,Clean,243.59
-2014,Fossil,10934.8
-2014,Gas and Other Fossil,3175.27
-2014,"Hydro, Bioenergy and Other Renewables",196.79
-2014,Renewables,213.96
-2014,Wind and Solar,17.169999999999998
-2015,Clean,257.04
-2015,Fossil,10837.66
-2015,Gas and Other Fossil,3341.9300000000003
-2015,"Hydro, Bioenergy and Other Renewables",205.78
-2015,Renewables,227.02
-2015,Wind and Solar,21.240000000000002
-2016,Clean,267.28
-2016,Fossil,10966.539999999999
-2016,Gas and Other Fossil,3424.99
-2016,"Hydro, Bioenergy and Other Renewables",210.72
-2016,Renewables,236.87
-2016,Wind and Solar,26.150000000000002
-2017,Clean,282.99
-2017,Fossil,11188.43
-2017,Gas and Other Fossil,3413.43
-2017,"Hydro, Bioenergy and Other Renewables",218.74
-2017,Renewables,252.37
-2017,Wind and Solar,33.629999999999995
-2018,Clean,301.15999999999997
-2018,Fossil,11527.79
-2018,Gas and Other Fossil,3449.88
-2018,"Hydro, Bioenergy and Other Renewables",228.68
-2018,Renewables,269.73
-2018,Wind and Solar,41.05
-2019,Clean,318.58
-2019,Fossil,11457.37
-2019,Gas and Other Fossil,3534.17
-2019,"Hydro, Bioenergy and Other Renewables",237.13
-2019,Renewables,285.90000000000003
-2019,Wind and Solar,48.77
-2020,Clean,334.03000000000003
-2020,Fossil,11014.09
-2020,Gas and Other Fossil,3432.39
-2020,"Hydro, Bioenergy and Other Renewables",245.03
-2020,Renewables,302.38
-2020,Wind and Solar,57.35
-2021,Clean,342.34000000000003
-2021,Fossil,11018.189999999999
-2021,Gas and Other Fossil,2893.59
-2021,"Hydro, Bioenergy and Other Renewables",241.65
-2021,Renewables,309.59
-2021,Wind and Solar,67.94
+,Area,Year,Variable,Value
+310260,World,2000,Bioenergy,34.15
+310261,World,2000,Coal,4687.23
+310262,World,2000,Gas,1329.71
+310263,World,2000,Hydro,62.91
+310264,World,2000,Nuclear,30.07
+310265,World,2000,Other Fossil,817.44
+310266,World,2000,Other Renewables,2.0
+310267,World,2000,Solar,0.05
+310268,World,2000,Wind,0.34
+310326,World,2001,Bioenergy,32.89
+310327,World,2001,Coal,4755.43
+310328,World,2001,Gas,1402.44
+310329,World,2001,Hydro,61.48
+310330,World,2001,Nuclear,30.87
+310331,World,2001,Other Fossil,806.38
+310332,World,2001,Other Renewables,1.96
+310333,World,2001,Solar,0.06
+310334,World,2001,Wind,0.42
+310392,World,2002,Bioenergy,35.95
+310393,World,2002,Coal,4965.54
+310394,World,2002,Gas,1502.36
+310395,World,2002,Hydro,62.43
+310396,World,2002,Nuclear,31.2
+310397,World,2002,Other Fossil,791.84
+310398,World,2002,Other Renewables,2.0
+310399,World,2002,Solar,0.08
+310400,World,2002,Wind,0.57
+310458,World,2003,Bioenergy,38.57
+310459,World,2003,Coal,5297.64
+310460,World,2003,Gas,1565.76
+310461,World,2003,Hydro,62.48
+310462,World,2003,Nuclear,30.91
+310463,World,2003,Other Fossil,805.25
+310464,World,2003,Other Renewables,2.05
+310465,World,2003,Solar,0.1
+310466,World,2003,Wind,0.7
+310524,World,2004,Bioenergy,42.45
+310525,World,2004,Coal,5485.97
+310526,World,2004,Gas,1684.95
+310527,World,2004,Hydro,67.07
+310528,World,2004,Nuclear,32.17
+310529,World,2004,Other Fossil,795.65
+310530,World,2004,Other Renewables,2.13
+310531,World,2004,Solar,0.13
+310532,World,2004,Wind,0.94
+310590,World,2005,Bioenergy,47.95
+310591,World,2005,Coal,5770.92
+310592,World,2005,Gas,1766.53
+310593,World,2005,Hydro,69.62
+310594,World,2005,Nuclear,32.22
+310595,World,2005,Other Fossil,796.01
+310596,World,2005,Other Renewables,2.17
+310597,World,2005,Solar,0.18
+310598,World,2005,Wind,1.14
+310656,World,2006,Bioenergy,50.99
+310657,World,2006,Coal,6098.27
+310658,World,2006,Gas,1874.02
+310659,World,2006,Hydro,72.05
+310660,World,2006,Nuclear,32.64
+310661,World,2006,Other Fossil,730.79
+310662,World,2006,Other Renewables,2.22
+310663,World,2006,Solar,0.25
+310664,World,2006,Wind,1.46
+310722,World,2007,Bioenergy,56.14
+310723,World,2007,Coal,6501.65
+310724,World,2007,Gas,2027.21
+310725,World,2007,Hydro,73.1
+310726,World,2007,Nuclear,31.98
+310727,World,2007,Other Fossil,748.76
+310728,World,2007,Other Renewables,2.32
+310729,World,2007,Solar,0.33
+310730,World,2007,Wind,1.88
+310788,World,2008,Bioenergy,59.72
+310789,World,2008,Coal,6499.84
+310790,World,2008,Gas,2079.99
+310791,World,2008,Hydro,77.48
+310792,World,2008,Nuclear,31.85
+310793,World,2008,Other Fossil,717.65
+310794,World,2008,Other Renewables,2.42
+310795,World,2008,Solar,0.55
+310796,World,2008,Wind,2.42
+310854,World,2009,Bioenergy,64.58
+310855,World,2009,Coal,6407.89
+310856,World,2009,Gas,2093.9
+310857,World,2009,Hydro,77.51
+310858,World,2009,Nuclear,31.41
+310859,World,2009,Other Fossil,664.76
+310860,World,2009,Other Renewables,2.5
+310861,World,2009,Solar,0.92
+310862,World,2009,Wind,3.03
+310920,World,2010,Bioenergy,74.48
+310921,World,2010,Coal,6847.83
+310922,World,2010,Gas,2305.62
+310923,World,2010,Hydro,81.75
+310924,World,2010,Nuclear,32.24
+310925,World,2010,Other Fossil,658.66
+310926,World,2010,Other Renewables,2.53
+310927,World,2010,Solar,1.49
+310928,World,2010,Wind,3.81
+310986,World,2011,Bioenergy,79.28
+310987,World,2011,Coal,7226.18
+310988,World,2011,Gas,2346.76
+310989,World,2011,Hydro,83.38
+310990,World,2011,Nuclear,30.91
+310991,World,2011,Other Fossil,729.32
+310992,World,2011,Other Renewables,2.57
+310993,World,2011,Solar,2.97
+310994,World,2011,Wind,4.84
+311052,World,2012,Bioenergy,85.62
+311053,World,2012,Coal,7243.68
+311054,World,2012,Gas,2465.55
+311055,World,2012,Hydro,87.35
+311056,World,2012,Nuclear,28.84
+311057,World,2012,Other Fossil,760.07
+311058,World,2012,Other Renewables,2.59
+311059,World,2012,Solar,4.58
+311060,World,2012,Wind,5.82
+311118,World,2013,Bioenergy,93.09
+311119,World,2013,Coal,7621.76
+311120,World,2013,Gas,2416.82
+311121,World,2013,Hydro,90.38
+311122,World,2013,Nuclear,29.03
+311123,World,2013,Other Fossil,733.14
+311124,World,2013,Other Renewables,2.67
+311125,World,2013,Solar,6.31
+311126,World,2013,Wind,7.04
+311184,World,2014,Bioenergy,101.37
+311185,World,2014,Coal,7759.53
+311186,World,2014,Gas,2480.66
+311187,World,2014,Hydro,92.6
+311188,World,2014,Nuclear,29.62
+311189,World,2014,Other Fossil,694.6
+311190,World,2014,Other Renewables,2.89
+311191,World,2014,Solar,9.4
+311192,World,2014,Wind,7.88
+311250,World,2015,Bioenergy,110.1
+311251,World,2015,Coal,7495.71
+311252,World,2015,Gas,2644.35
+311253,World,2015,Hydro,92.8
+311254,World,2015,Nuclear,30.02
+311255,World,2015,Other Fossil,697.58
+311256,World,2015,Other Renewables,3.01
+311257,World,2015,Solar,12.21
+311258,World,2015,Wind,9.12
+311316,World,2016,Bioenergy,111.86
+311317,World,2016,Coal,7541.59
+311318,World,2016,Gas,2763.68
+311319,World,2016,Hydro,95.86
+311320,World,2016,Nuclear,30.4
+311321,World,2016,Other Fossil,661.24
+311322,World,2016,Other Renewables,3.08
+311323,World,2016,Solar,15.76
+311324,World,2016,Wind,10.55
+311382,World,2017,Bioenergy,118.45
+311383,World,2017,Coal,7775.07
+311384,World,2017,Gas,2812.59
+311385,World,2017,Hydro,97.16
+311386,World,2017,Nuclear,30.58
+311387,World,2017,Other Fossil,600.72
+311388,World,2017,Other Renewables,3.22
+311389,World,2017,Solar,21.28
+311390,World,2017,Wind,12.51
+311448,World,2018,Bioenergy,125.26
+311449,World,2018,Coal,8077.91
+311450,World,2018,Gas,2904.06
+311451,World,2018,Hydro,100.15
+311452,World,2018,Nuclear,31.44
+311453,World,2018,Other Fossil,545.77
+311454,World,2018,Other Renewables,3.36
+311455,World,2018,Solar,27.27
+311456,World,2018,Wind,13.96
+311514,World,2019,Bioenergy,132.42
+311515,World,2019,Coal,7923.22
+311516,World,2019,Gas,3021.16
+311517,World,2019,Hydro,101.3
+311518,World,2019,Nuclear,32.69
+311519,World,2019,Other Fossil,512.9
+311520,World,2019,Other Renewables,3.45
+311521,World,2019,Solar,33.31
+311522,World,2019,Wind,15.6
+311580,World,2020,Bioenergy,137.68
+311581,World,2020,Coal,7581.67
+311582,World,2020,Gas,2946.26
+311583,World,2020,Hydro,103.81
+311584,World,2020,Nuclear,31.63
+311585,World,2020,Other Fossil,486.07
+311586,World,2020,Other Renewables,3.62
+311587,World,2020,Solar,40.03
+311588,World,2020,Wind,17.42
+311646,World,2021,Bioenergy,151.82
+311647,World,2021,Coal,8244.26
+311648,World,2021,Gas,2999.48
+311649,World,2021,Hydro,101.07
+311650,World,2021,Nuclear,32.84
+311651,World,2021,Other Fossil,528.43
+311652,World,2021,Other Renewables,3.68
+311653,World,2021,Solar,48.85
+311654,World,2021,Wind,20.36

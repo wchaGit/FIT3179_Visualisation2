@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600, "height": 500,
+    "data": {"url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/emissions.csv"},
+    "mark": "area",
+    "params": [{
+      "name": "source",
+      "select": {"type": "point", "fields": ["Variable"]},
+      "bind": "legend"
+    }],
+    "encoding": {
+      "x": {
+        "timeUnit": "year", "field": "Year",
+        "axis": {"domain": false, "format": "%Y", "tickSize": 0}
+      },
+      "y": {
+        "aggregate": "sum", "field": "Value",
+        "stack": "center", "axis": null
+      },
+      "color": {
+        "field": "Variable",
+        "scale": {"scheme": "category20b"}
+      },
+      "opacity": {
+        "condition": {"param": "source", "value": 1},
+        "value": 0.2
+      }
+    }
+  }
+  
