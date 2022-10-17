@@ -3,7 +3,7 @@
     "description": "A bar chart showing the US population distribution of age groups and gender in 2000.",
     "data": { "url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/generation_vs_emission.csv"},
     
-    "width": {"step": 17},
+    "width": 550, "height": 300,
     "mark": "bar",
     "encoding": {
         "x": {"field": "Year", "type": "ordinal"},
@@ -14,7 +14,8 @@
         },
         "color": {
         "field": "Variable",
-        "scale": {"range": ["#675193", "#ca8861"]}
+        "scale": {"range": ["#675193", "#ca8861"]},
+        "legend": {"orient": "bottom"}
         },
         "opacity": {"value": 0.7}
     }
