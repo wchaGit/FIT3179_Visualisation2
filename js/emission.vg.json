@@ -3,6 +3,7 @@
     "width": 600, "height": 500,
     "data": {"url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/emissions.csv"},
     "encoding": {"x": {"field": "Year", "type": "temporal"}},
+    "title": "CO2 emissions from electrical sources, World, 2000-2020",
     "layer":
     [
         {

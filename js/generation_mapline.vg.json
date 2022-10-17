@@ -20,6 +20,7 @@
       {
         "width": 700,
         "height": 400,
+        "title": "Electricity Generation, World, 2000-2020",
         "projection": {
           "type": "equalEarth"
         },
