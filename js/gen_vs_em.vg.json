@@ -18,6 +18,11 @@
         "scale": {"range": ["#675193", "#ca8861"]},
         "legend": {"orient": "bottom"}
         },
-        "opacity": {"value": 0.7}
+        "opacity": {"value": 0.7},
+        "tooltip":[
+            {"field": "Year", "type": "ordinal", "title": "Year"},
+            {"field": "Variable"},
+            {"field": "Value", "type": "quantitative", "format": ","}
+          ]
     }
   }

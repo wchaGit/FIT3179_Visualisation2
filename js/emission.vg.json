@@ -1,6 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600, "height": 300,
+    "padding": 40,
+    "width": 550, "height": 300,
     "data": {"url": "https://raw.githubusercontent.com/wchaGit/FIT3179_Visualisation2/master/data/emissions.csv"},
     "encoding": {"x": {"field": "Year", "type": "temporal"}},
     "title": "CO2 emissions from electrical sources, World, 2000-2021",

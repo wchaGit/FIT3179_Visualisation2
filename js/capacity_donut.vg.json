@@ -29,7 +29,7 @@
       "scale": {
         "type": "threshold",
         "domain": ["Africa", "Asia", "Europe", "Latin America and Caribbean", "North America", "Oceania"],
-        "range": ["#FE4A49", "2AB7CA", "#FED766", "#9e714f", "#3d0b37", "#26547c"]
+        "range": ["#FE4A49", "#2AB7CA", "#FED766", "#9e714f", "#3d0b37", "#26547c"]
       }},
     "fillOpacity": {
       "condition": {"param": "highlight", "value": 1},
